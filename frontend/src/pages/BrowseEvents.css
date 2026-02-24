@@ -1,0 +1,240 @@
+.browse-events-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 56px);
+    background: #0f0c29;
+    color: #eee;
+}
+
+.browse-events-container h1 {
+    color: #e94560;
+    margin-bottom: 1.5rem;
+}
+
+.filters-section {
+    background: #16213e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 2;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    min-width: 200px;
+    background: #1a1a2e;
+    color: #eee;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #e94560;
+}
+
+.filters-section select,
+.filters-section input[type="date"] {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #1a1a2e;
+    color: #eee;
+    outline: none;
+}
+
+.filters-section select:focus,
+.filters-section input[type="date"]:focus {
+    border-color: #e94560;
+}
+
+.date-filters {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #bbb;
+}
+
+.checkbox-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.event-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.event-card {
+    background: #16213e;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(233,69,96,0.15);
+}
+
+.event-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #eee;
+}
+
+.event-organizer {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.event-type {
+    font-weight: bold;
+    color: #e94560;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.event-date {
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background: rgba(233,69,96,0.15);
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #e94560;
+}
+
+/* ===== Trending Section ===== */
+.trending-section {
+    background: #16213e;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-left: 4px solid #e94560;
+}
+
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.trending-header h2 {
+    color: #e94560;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.trending-badge {
+    background: rgba(233,69,96,0.2);
+    color: #e94560;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.trending-toggle {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.trending-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.trending-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #1a1a2e;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 14px 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trending-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 10px rgba(233,69,96,0.12);
+}
+
+.trending-rank {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #e94560;
+    min-width: 32px;
+}
+
+.trending-info {
+    flex: 1;
+}
+
+.trending-info h3 {
+    margin: 0 0 2px 0;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.trending-stats {
+    color: #51cf66;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* Upcoming Section */
+.upcoming-section {
+    border-left-color: #4dabf7;
+}
+
+.upcoming-badge {
+    background: rgba(77,171,247,0.2) !important;
+    color: #4dabf7 !important;
+}
+
+.upcoming-card {
+    border-left: 3px solid #4dabf7;
+}
+
+.upcoming-time {
+    color: #4dabf7 !important;
+}

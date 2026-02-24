@@ -1,0 +1,86 @@
+.clubs-list-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: calc(100vh - 56px);
+    background: #0f0c29;
+    color: #eee;
+}
+
+.clubs-list-container h1 {
+    color: #e94560;
+    margin-bottom: 1.5rem;
+}
+
+.clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.club-card {
+    background: #16213e;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    transition: transform 0.2s;
+}
+
+.club-card:hover {
+    transform: translateY(-2px);
+}
+
+.club-card h2 {
+    margin: 0 0 0.5rem 0;
+    color: #eee;
+}
+
+.club-card h2 a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.club-card h2 a:hover {
+    color: #e94560;
+}
+
+.category {
+    color: #e94560;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.club-card p {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.follow-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e94560;
+    background: transparent;
+    color: #e94560;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.follow-btn:hover {
+    background: rgba(233,69,96,0.15);
+}
+
+.follow-btn.following {
+    background: #e94560;
+    color: white;
+}
+
+.follow-btn.following:hover {
+    background: #c73652;
+}

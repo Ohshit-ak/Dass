@@ -1,0 +1,35 @@
+/* ===== Global Reset & Tokens ===== */
+:root {
+  --clr-bg: #0f0c29;
+  --clr-surface: #16213e;
+  --clr-accent: #e94560;
+  --clr-text: #eee;
+  --clr-muted: #888;
+  --clr-border: #333;
+  --clr-danger: #ff6b6b;
+  --clr-success: #51cf66;
+  --radius: 8px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--clr-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button { font-family: inherit; }
+
+::selection {
+  background: var(--clr-accent);
+  color: #fff;
+}

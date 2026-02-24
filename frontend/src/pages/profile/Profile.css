@@ -1,0 +1,112 @@
+.profile-page {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #0f0c29;
+}
+
+.profile-card {
+  background: #16213e;
+  border-radius: 12px;
+  padding: 32px;
+  width: 520px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+
+.profile-card h2 {
+  color: #e94560;
+  margin-bottom: 20px;
+}
+
+.field-readonly {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.field-label {
+  font-weight: 600;
+  color: #999;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a2e;
+  color: #eee;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.profile-form input:focus,
+.profile-form select:focus,
+.profile-form textarea:focus {
+  border-color: #e94560;
+}
+
+.profile-success {
+  color: #51cf66;
+  background: rgba(81,207,102,0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row label {
+  flex: 1;
+}
+
+.checkbox-group {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.checkbox-group legend {
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 0 6px;
+}
+
+.checkbox-label {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 6px;
+  color: #bbb;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #e94560;
+}
